@@ -67,7 +67,8 @@ $$P = 2*W + OT = 2(31) + 5 = 67$$
 Percent of possible points gained.  Calculated by dividing number of points gained by the total number of points possible, or two times the number of games.  Vancouver has 67 points out of 114 possible as shown below:
 
 $$P\% = \frac{P}{Total Points Possible} = \frac{67}{2*57} = \frac{67}{114} = 0.588$$
-### RW: Regulation Wins 
+
+### RW: Regulation Wins ()
 
 Number of wins within regulation time.
 
@@ -341,3 +342,9 @@ $$P = 0 + 1 = 1$$
 ### PIM: Penalty Minutes (4)
 
 Number of Penalty Minutes Accrued by the Goalie^[Goalies cannot be sent to the penalty box, instead the penalty is served by another player from their team that was on the ice at the time of the penalty.]
+
+
+
+# Conclusion
+
+All the data in this article was exported from www.NHL.com.  Be on the look out for Part 2 where we'll dive into some other statistics.
