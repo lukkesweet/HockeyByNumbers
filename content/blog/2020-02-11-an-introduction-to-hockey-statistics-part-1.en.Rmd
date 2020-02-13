@@ -18,6 +18,7 @@ type: post
 
 ![Vancouver Canucks' 2020 All-Stars: Quinn Hughes, left, Elias Pettersson, center, and Jacob Markstrom, right.   (NHL.com)](/post/2020-02-11-an-introduction-to-hockey-statistics.en_files/Canucks 2020 All-Stars.jpg)
 
+Welcome to Hockey By Numbers!  This site will focus on looking at the game of hockey through the lens of statistics.  A great place to start is with the basic stats available for teams, players, and goalies from the NHL.
 
 # Team Statistics
 
