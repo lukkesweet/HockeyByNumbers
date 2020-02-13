@@ -1,0 +1,68 @@
+---
+title: An Introduction to Hockey Statistics
+author: Lukke Sweet
+date: '2020-02-11'
+slug: an-introduction-to-hockey-statistics
+categories: []
+tags:
+  - NHL
+  - Statistics
+description: ''
+images:
+  - ''
+linktitle: ''
+type: post
+---
+
+![Vancouver Canucks All-Stars (NHL.com)](/post/2020-02-10-an-introduction-to-player-statistics.en_files/Canucks 2020 All-Stars.jpg)
+
+# Team Statistics
+
+```{r, echo = F, message = F, warnings = F}
+
+library(magrittr)
+library(dplyr)
+library(kableExtra)
+library(knitr)
+
+team.dat <- readxl::read_xlsx('U:/Personal/HockeyByNumbers/Content/Data/An Introduction to Hockey Statistics Part 1/Team Summary 2.11.2020.xlsx')
+
+team.dat %>%
+  filter(Team == 'Vancouver Canucks') %>%
+  select(-Season, -T) %>%
+  kable('html', booktabs = T, caption = 'Vancouver Canucks Season Statistics - February 11, 2020') %>%
+  kable_styling(position = 'center', full_width = F) %>%
+  scroll_box(width = "100%")
+```
+
+
+# Skater Statistics
+
+```{r, echo = F, message = F, warnings = F}
+
+skater.dat <- readxl::read_xlsx('U:/Personal/HockeyByNumbers/Content/Data/An Introduction to Hockey Statistics Part 1/Vancouver Skater Statistics 2.11.2020.xlsx')
+
+skater.dat %>%
+  filter(Player == 'Elias Pettersson') %>%
+  select(-Season) %>%
+  kable('html', booktabs = T, caption = 'Elias Pettersson Season Statistics - February 11, 2020') %>%
+  kable_styling(position = 'center', full_width = F) %>%
+  scroll_box(width = "100%")
+
+```
+
+# Goalie Statistics
+
+```{r, echo = F, message = F, warnings = F}
+
+goalie.dat <- readxl::read_xlsx('U:/Personal/HockeyByNumbers/Content/Data/An Introduction to Hockey Statistics Part 1/Goalie Statistics 2.11.2020.xlsx')
+
+
+goalie.dat %>%
+  filter(Player == 'Jacob Markstrom') %>%
+  select(-Season, -T) %>%
+  kable('html', booktabs = T, caption = 'Jacob Markstrom Season Statistics - February 11, 2020') %>%
+  kable_styling(position = 'center', full_width = F) %>%
+  scroll_box(width = "100%")
+
+```

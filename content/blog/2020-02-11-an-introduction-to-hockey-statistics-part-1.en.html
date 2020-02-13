@@ -1,0 +1,711 @@
+---
+title: An Introduction to Hockey Statistics
+author: Lukke Sweet
+date: '2020-02-11'
+slug: an-introduction-to-hockey-statistics
+categories:
+  - NHL
+  - Statistics
+tags:
+  - NHL
+  - Statistics
+description: ''
+images:
+  - '/post/2020-02-11-an-introduction-to-hockey-statistics.en_files/Canucks 2020 All-Stars.jpg'
+linktitle: ''
+type: post
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<div class="figure">
+<img src="/post/2020-02-11-an-introduction-to-hockey-statistics.en_files/Canucks%202020%20All-Stars.jpg" alt="Vancouver Canucks’ 2020 All-Stars: Quinn Hughes, left, Elias Pettersson, center, and Jacob Markstrom, right. (NHL.com)" />
+<p class="caption">Vancouver Canucks’ 2020 All-Stars: Quinn Hughes, left, Elias Pettersson, center, and Jacob Markstrom, right. (NHL.com)</p>
+</div>
+<div id="team-statistics" class="section level1">
+<h1>Team Statistics</h1>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-1">Table 1: </span>Vancouver Canucks Season Statistics - February 11, 2020
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Team
+</th>
+<th style="text-align:right;">
+GP
+</th>
+<th style="text-align:right;">
+W
+</th>
+<th style="text-align:right;">
+L
+</th>
+<th style="text-align:right;">
+OT
+</th>
+<th style="text-align:right;">
+P
+</th>
+<th style="text-align:right;">
+P%
+</th>
+<th style="text-align:right;">
+RW
+</th>
+<th style="text-align:right;">
+ROW
+</th>
+<th style="text-align:right;">
+S/O Win
+</th>
+<th style="text-align:right;">
+GF
+</th>
+<th style="text-align:right;">
+GA
+</th>
+<th style="text-align:right;">
+GF/GP
+</th>
+<th style="text-align:right;">
+GA/GP
+</th>
+<th style="text-align:right;">
+PP%
+</th>
+<th style="text-align:right;">
+PK%
+</th>
+<th style="text-align:right;">
+Net PP%
+</th>
+<th style="text-align:right;">
+Net PK%
+</th>
+<th style="text-align:right;">
+Shots/GP
+</th>
+<th style="text-align:right;">
+SA/GP
+</th>
+<th style="text-align:right;">
+FOW%
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Vancouver Canucks
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+0.588
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+184
+</td>
+<td style="text-align:right;">
+173
+</td>
+<td style="text-align:right;">
+3.23
+</td>
+<td style="text-align:right;">
+3.04
+</td>
+<td style="text-align:right;">
+23.4
+</td>
+<td style="text-align:right;">
+80.5
+</td>
+<td style="text-align:right;">
+21.5
+</td>
+<td style="text-align:right;">
+83.2
+</td>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:right;">
+33
+</td>
+<td style="text-align:right;">
+53.8
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We’ll use the Vancouver Canucks as our example to look over team statistics. The Vancouver Canucks are currently in their 50th season after being an expansion team in 1970. Since then they have appeared in the playoffs 27 times, most recently in 2015. They have also appeared in 3 Stanley Cup finals, most recently in 2011, where they lost to the Boston Bruins in Game 7.</p>
+<div id="gp-games-played-57" class="section level3">
+<h3>GP: Games Played (57)</h3>
+<p>Number of games played for the season.</p>
+</div>
+<div id="w-wins-31" class="section level3">
+<h3>W: Wins (31)</h3>
+<p>Number of games won for the season.</p>
+</div>
+<div id="l-regulation-losses-21" class="section level3">
+<h3>L: Regulation Losses (21)</h3>
+<p>Number of regulation losses for the season.</p>
+</div>
+<div id="ot-overtime-or-shootout-losses-5" class="section level3">
+<h3>OT: Overtime or Shootout Losses (5)</h3>
+<p>Number of overtime or shootout losses.</p>
+</div>
+<div id="p-points-67" class="section level3">
+<h3>P: Points (67)</h3>
+<p>Number of points a team has accrued. A team gains 2 points for each win and 1 point for each overtime or shootout loss. The Canucks have 31 wins and 5 overtime losses so:</p>
+<p><span class="math display">\[P = 2*W + OT = 2(31) + 5 = 67\]</span></p>
+</div>
+<div id="p-point-percentage-0.588" class="section level3">
+<h3>P%: Point Percentage (0.588)</h3>
+<p>Percent of possible points gained. Calculated by dividing number of points gained by the total number of points possible, or two times the number of games. Vancouver has 67 points out of 114 possible as shown below:</p>
+<p><span class="math display">\[P\% = \frac{P}{Total Points Possible} = \frac{67}{2*57} = \frac{67}{114} = 0.588\]</span>
+### RW: Regulation Wins</p>
+<p>Number of wins within regulation time.</p>
+</div>
+<div id="row-regulation-plus-overtime-wins-28" class="section level3">
+<h3>ROW: Regulation plus Overtime Wins (28)</h3>
+<p>Number of wins within regulation time or overtime.</p>
+</div>
+<div id="so-win-shootout-wins-3" class="section level3">
+<h3>S/O Win: Shootout Wins (3)</h3>
+<p>Number of shootout wins.</p>
+</div>
+<div id="gf-goals-for-184" class="section level3">
+<h3>GF: Goals For (184)</h3>
+<p>Total number of goals the team has scored.</p>
+</div>
+<div id="ga-goals-against-173" class="section level3">
+<h3>GA: Goals Against (173)</h3>
+<p>Total goals scored on the team.</p>
+</div>
+<div id="gfgp-goals-for-per-game-played-3.23" class="section level3">
+<h3>GF/GP: Goals For per Game Played (3.23)</h3>
+<p>Average goals per game. Calculated by dividing Goals For by Games Played:</p>
+<p><span class="math display">\[GF/GP = \frac{184}{57} = 3.23\]</span></p>
+</div>
+<div id="gagp-goals-against-per-game-played-3.04" class="section level3">
+<h3>GA/GP: Goals Against per Game Played (3.04)</h3>
+<p>Average goals scored on the team per game. Calculated by dividing Goals Against by Games Played:</p>
+<p><span class="math display">\[GA/GP = \frac{173}{57} = 3.04\]</span></p>
+</div>
+<div id="pp-power-play-percentage-23.4" class="section level3">
+<h3>PP%: Power Play Percentage (23.4)</h3>
+<p>Percentage of successful power plays.</p>
+</div>
+<div id="pk-penalty-kill-percentage-80.5" class="section level3">
+<h3>PK%: Penalty Kill Percentage (80.5)</h3>
+<p>Percentage of successful defenses against an opponent’s power play.</p>
+</div>
+<div id="net-pp-net-power-play-percentage-21.5" class="section level3">
+<h3>Net PP%: Net Power Play Percentage (21.5)</h3>
+<p>Net Power Play Percentage is an updated version of Power Play Percentage that takes into account. It is calculated by the following equation:</p>
+<p><span class="math display">\[Net PP\% = \frac{PPGF - SHGA}{PP}\]</span>
+where, PPGF is Power Play Goals For, SHGA is Shorthanded Goals Against, and PP is Power Play Opportunities.</p>
+</div>
+<div id="net-pk-net-penalty-kill-percentage-83.2" class="section level3">
+<h3>Net PK%: Net Penalty Kill Percentage (83.2)</h3>
+<p>Similarly, Penalty Kill Percentage got an updated version called Net Penalty Kill Percentage which is calculated:</p>
+<p><span class="math display">\[Net PK\% = 1 - \frac{PPGA - SHGF}{TS}\]</span></p>
+<p>where PPGA is Power Play Goals Against, SHGF is Shorthanded Goals For, and TS is Times Shorthanded.</p>
+</div>
+<div id="shotsgp-shots-per-games-played-31" class="section level3">
+<h3>Shots/GP: Shots per Games Played (31)</h3>
+<p>Average number of shots per game.</p>
+</div>
+<div id="sagp-shots-against-per-game-played-33" class="section level3">
+<h3>SA/GP: Shots Against per Game Played (33)</h3>
+<p>Average number of shots against per game</p>
+</div>
+<div id="fow-faceoff-win-percentage-53.8" class="section level3">
+<h3>FOW%: Faceoff Win Percentage (53.8)</h3>
+<p>Percentage of faceoffs won by the team.</p>
+</div>
+</div>
+<div id="skater-statistics" class="section level1">
+<h1>Skater Statistics</h1>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-2">Table 2: </span>Elias Pettersson Season Statistics - February 11, 2020
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Player
+</th>
+<th style="text-align:left;">
+Team
+</th>
+<th style="text-align:left;">
+S/C
+</th>
+<th style="text-align:left;">
+Pos
+</th>
+<th style="text-align:right;">
+GP
+</th>
+<th style="text-align:right;">
+G
+</th>
+<th style="text-align:right;">
+A
+</th>
+<th style="text-align:right;">
+P
+</th>
+<th style="text-align:right;">
++/-
+</th>
+<th style="text-align:right;">
+PIM
+</th>
+<th style="text-align:right;">
+P/GP
+</th>
+<th style="text-align:right;">
+EVG
+</th>
+<th style="text-align:right;">
+EVP
+</th>
+<th style="text-align:right;">
+PPG
+</th>
+<th style="text-align:right;">
+PPP
+</th>
+<th style="text-align:right;">
+SHG
+</th>
+<th style="text-align:right;">
+SHP
+</th>
+<th style="text-align:right;">
+GWG
+</th>
+<th style="text-align:right;">
+S
+</th>
+<th style="text-align:left;">
+S%
+</th>
+<th style="text-align:left;">
+TOI/GP
+</th>
+<th style="text-align:left;">
+FOW%
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Elias Pettersson
+</td>
+<td style="text-align:left;">
+VAN
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+1.02
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+137
+</td>
+<td style="text-align:left;">
+16.8
+</td>
+<td style="text-align:left;">
+18:29
+</td>
+<td style="text-align:left;">
+44.2
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Let’s take a look at Elias Pettersson as our example for individual skater statistics. Pettersson is in his second season with the Vancouver Canucks after being drafted in 2018. He made a splash in his first season going on to win the Calder Memorial Trophy, annually given “to the player selected as the most proficient in his first year of competition in the National Hockey League.”</p>
+<div id="team-team-played-for-vancouver-canucks" class="section level3">
+<h3>Team: Team Played For (Vancouver Canucks)</h3>
+<p>This is pretty self-explanatory. It covers which team the player is with for the given season.</p>
+</div>
+<div id="sc-skater-shoots-left" class="section level3">
+<h3>S/C: Skater Shoots (Left)</h3>
+<p>The handedness of the player. It is S/C because the same statistic is used for a goalie’s catching hand.</p>
+</div>
+<div id="pos-player-position-center" class="section level3">
+<h3>Pos: Player Position (Center)</h3>
+<p>The players position. Skaters can be a Center (C), Defender (D), Left Wing (L), or Right Wing (R).</p>
+</div>
+<div id="gp-games-played-56" class="section level3">
+<h3>GP: Games Played (56)</h3>
+<p>The number of games the player has appeared in for the given season.</p>
+</div>
+<div id="g-goals-23" class="section level3">
+<h3>G: Goals (23)</h3>
+<p>The number of goals the player has scored for a given season.</p>
+</div>
+<div id="a-assists-34" class="section level3">
+<h3>A: Assists (34)</h3>
+<p>The number of assists the player has for a given season. Assists are awarded to the two players to control the puck prior to the goal scorer.</p>
+</div>
+<div id="p-points-57" class="section level3">
+<h3>P: Points (57)</h3>
+<p>The number of points for the player in a given season. Points are calculated by adding Goals and Assists. The Art Ross Trophy is awarded to the player who has the most points at the end of the regular season. Pettersson has 23 goals and 34 assists:</p>
+<p><span class="math display">\[P = 23 + 34 = 57\]</span></p>
+</div>
+<div id="plus-minus-12" class="section level3">
+<h3>+/-: Plus-Minus (12)</h3>
+<p>Plus-Minus is a controversial statistic in hockey due to its calculation. Taking into account only even-strength and shorthanded goals<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Plus-Minus is given a ‘plus’ for each goal scored while the player is on the ice. A ‘minus’ is given for each goal a team gives up while the player is on the ice. Plus-Minus is the difference between these two numbers.</p>
+</div>
+<div id="pim-penalty-minutes-16" class="section level3">
+<h3>PIM: Penalty Minutes (16)</h3>
+<p>The number of penalty minutes the player has accrued for the given season.</p>
+</div>
+<div id="pgp-points-per-game-played-1.02" class="section level3">
+<h3>P/GP: Points per Game Played (1.02)</h3>
+<p>The average number of points per game. Calculated by dividing the players points by the number of games played.</p>
+<p>Let’s take a look at how this was calculated for Pettersson, he’s played in 56 games and accrued 57 points:</p>
+<p><span class="math display">\[P/GP = \frac{57}{56} = 1.02\]</span></p>
+</div>
+<div id="evg-even-strength-goals-16" class="section level3">
+<h3>EVG: Even Strength Goals (16)</h3>
+<p>Number of goals scored by the player while their team is at even strength. Even strength means that both teams have the same number of players on the ice.</p>
+</div>
+<div id="evp-even-strength-points-36" class="section level3">
+<h3>EVP: Even Strength Points (36)</h3>
+<p>Number of points accrued by the player while their team is at even strength. This is again calculated as the sum of goals and assists.</p>
+</div>
+<div id="ppg-power-play-goals-7" class="section level3">
+<h3>PPG: Power Play Goals (7)</h3>
+<p>Number of goals scored by the player while their team is on a power play. A power play is when a team has more players on the ice following a penalty by the opposing team.</p>
+</div>
+<div id="ppp-power-play-points-21" class="section level3">
+<h3>PPP: Power Play Points (21)</h3>
+<p>Number of points accrued by the player while their team is on a power play.</p>
+</div>
+<div id="shg-shorthanded-goals-0" class="section level3">
+<h3>SHG: Shorthanded Goals (0)</h3>
+<p>Number of goals scored by the player while their team is shorthanded. A team will play shorthanded following a penalty meaning that the opposing team is on a power play.</p>
+</div>
+<div id="shp-shorthanded-points-0" class="section level3">
+<h3>SHP: Shorthanded Points (0)</h3>
+<p>Number of points accrued by the player while their team is shorthanded.</p>
+</div>
+<div id="gwg-game-winning-goals-5" class="section level3">
+<h3>GWG: Game Winning Goals (5)</h3>
+<p>Number of game winning goals the player has scored. A game winning goal is defined by the goal a team needs to win, without scoring any additional goals. For example, if a team wins 7-4, the 5th goal is considered the game winning goal.</p>
+</div>
+<div id="s-shots-137" class="section level3">
+<h3>S: Shots (137)</h3>
+<p>Number of shots on goal the player has taken.</p>
+</div>
+<div id="s-shooting-percentage-16.8" class="section level3">
+<h3>S%: Shooting Percentage (16.8)</h3>
+<p>The shooting percentage of the player. Calculated by dividing goals by shots. Pettersson has 23 goals on 137 shots, so:</p>
+<p><span class="math display">\[S\% = \frac{23}{137}*100 = 16.8\%\]</span></p>
+</div>
+<div id="toigp-time-on-ice-per-game-played-1829" class="section level3">
+<h3>TOI/GP: Time on Ice per Game Played (18:29)</h3>
+<p>Average time on Ice for the player.</p>
+</div>
+<div id="fow-faceoff-win-percentage-44.2" class="section level3">
+<h3>FOW%: Faceoff Win Percentage (44.2)</h3>
+<p>Percentage of faceoff wins for the player.</p>
+</div>
+</div>
+<div id="goalie-statistics" class="section level1">
+<h1>Goalie Statistics</h1>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:unnamed-chunk-3">Table 3: </span>Jacob Markstrom Season Statistics - February 11, 2020
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Player
+</th>
+<th style="text-align:left;">
+Team
+</th>
+<th style="text-align:left;">
+S/C
+</th>
+<th style="text-align:right;">
+GP
+</th>
+<th style="text-align:right;">
+GS
+</th>
+<th style="text-align:right;">
+W
+</th>
+<th style="text-align:right;">
+L
+</th>
+<th style="text-align:right;">
+OT
+</th>
+<th style="text-align:left;">
+SA
+</th>
+<th style="text-align:left;">
+Svs
+</th>
+<th style="text-align:right;">
+GA
+</th>
+<th style="text-align:right;">
+Sv%
+</th>
+<th style="text-align:right;">
+GAA
+</th>
+<th style="text-align:left;">
+TOI
+</th>
+<th style="text-align:right;">
+SO
+</th>
+<th style="text-align:right;">
+G
+</th>
+<th style="text-align:right;">
+A
+</th>
+<th style="text-align:right;">
+P
+</th>
+<th style="text-align:right;">
+PIM
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Jacob Markstrom
+</td>
+<td style="text-align:left;">
+VAN
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+1,306
+</td>
+<td style="text-align:left;">
+1,195
+</td>
+<td style="text-align:right;">
+111
+</td>
+<td style="text-align:right;">
+0.915
+</td>
+<td style="text-align:right;">
+2.81
+</td>
+<td style="text-align:left;">
+2,369:20
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Jacob Markstrom was drafted in the second round of the 2008 NHL Draft by the Florida Panthers. Making his NHL debut in 2011 for the Panthers before spending three seasons with the American Hockey League before being traded to the Vancouver Canucks for Roberto Luongo in 2014.</p>
+<div id="team-team-played-for-vancouver-canucks-1" class="section level3">
+<h3>Team: Team played for (Vancouver Canucks)</h3>
+<p>This is pretty self-explanatory. It covers which team the goalie is with for the given season.</p>
+</div>
+<div id="sc-goalie-catches-l" class="section level3">
+<h3>S/C: Goalie Catches (L)</h3>
+<p>The handedness of the player. It is S/C because the same statistic is used for a skater’s shooting hand.</p>
+</div>
+<div id="gp-games-played-40" class="section level3">
+<h3>GP: Games Played (40)</h3>
+<p>Number of games played.</p>
+</div>
+<div id="gs-games-started-40" class="section level3">
+<h3>GS: Games Started (40)</h3>
+<p>Number of games started.</p>
+</div>
+<div id="w-wins-21" class="section level3">
+<h3>W: Wins (21)</h3>
+<p>Number of wins.</p>
+</div>
+<div id="l-regulation-losses-16" class="section level3">
+<h3>L: Regulation Losses (16)</h3>
+<p>Number of losses in regulation time.</p>
+</div>
+<div id="ot-overtime-or-shootout-losses-3" class="section level3">
+<h3>OT: Overtime or Shootout Losses (3)</h3>
+<p>Number of overtime or shootout losses.</p>
+</div>
+<div id="sa-shots-against-1306" class="section level3">
+<h3>SA: Shots Against (1,306)</h3>
+<p>Number of shots against.</p>
+</div>
+<div id="svs-saves-1195" class="section level3">
+<h3>Svs: Saves (1,195)</h3>
+<p>Number of saves.</p>
+</div>
+<div id="ga-goals-against-111" class="section level3">
+<h3>GA: Goals Against (111)</h3>
+<p>Number of goals scored against.</p>
+</div>
+<div id="sv-save-percentage-0.915" class="section level3">
+<h3>Sv%: Save Percentage (0.915)</h3>
+<p>Percentage of saved shots, calculated by dividing saves by total shots. Markstrom has made 1,195 saves out of 1,306 shots which is calculated below:</p>
+<p><span class="math display">\[Sv\% = \frac{1,195}{1,306} = 0.915\]</span></p>
+</div>
+<div id="gaa-goals-against-average-2.81" class="section level3">
+<h3>GAA: Goals Against Average (2.81)</h3>
+<p>Average number of goals scored against per game, as measured in 60-minute increments. Markstrom has let in 111 goals while on the ice for 2,369 minutes and 20 seconds. GAA is caluculated by the following formula:</p>
+<p><span class="math display">\[GAA = \frac{GA*60}{TOI} = \frac{111*60}{2369.33} = 2.81\]</span>
+where GA is goals against and TOI is time on Ice.</p>
+</div>
+<div id="toi-time-on-ice-236920" class="section level3">
+<h3>TOI: Time on Ice (2,369:20)</h3>
+<p>Amount of time the goalie has been out on the ice.</p>
+</div>
+<div id="so-shutouts-1" class="section level3">
+<h3>SO: Shutouts (1)</h3>
+<p>Number of shutout wins.</p>
+</div>
+<div id="g-goals-0" class="section level3">
+<h3>G: Goals (0)</h3>
+<p>Number of goals scored.</p>
+</div>
+<div id="a-assists-1" class="section level3">
+<h3>A: Assists (1)</h3>
+<p>The number of assists the player has for a given season. Assists are awarded to the two players to control the puck prior to the goal scorer.</p>
+</div>
+<div id="p-points-1" class="section level3">
+<h3>P: Points (1)</h3>
+<p>The number of points for the player in a given season. Points are calculated by adding Goals and Assists. The Art Ross Trophy is awarded to the player who has the most points at the end of the regular season. Markstrom has 0 goals and 1 assist.</p>
+<p><span class="math display">\[P = 0 + 1 = 1\]</span></p>
+</div>
+<div id="pim-penalty-minutes-4" class="section level3">
+<h3>PIM: Penalty Minutes (4)</h3>
+<p>Number of Penalty Minutes Accrued by the Goalie<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Powerplay goals, penalty shot goals, and empty net goals are omitted.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Goalies cannot be sent to the penalty box, instead the penalty is served by another player from their team that was on the ice at the time of the penalty.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

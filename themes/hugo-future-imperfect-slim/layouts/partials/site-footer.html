@@ -1,0 +1,27 @@
+<footer id="site-footer">
+  {{ if or (.Site.Params.footer.rssFooter) (.Site.Params.footer.socialFooter) }}
+      <ul class="socnet-icons">
+        {{ if .Site.Params.footer.rssFooter }}{{ partial "rss-icon" . }}{{ end }}
+        {{ if .Site.Params.footer.socialFooter }}{{ partial "socnet-icon" . }}{{ end }}
+      </ul>
+  {{ end }}
+  <p class="copyright">
+    {{ with .Site.Copyright | safeHTML }}
+      {{ . }}
+    {{ else }}
+      &copy; {{ .Site.LastChange.Year }}
+      {{if isset .Site.Params "author" }}
+        {{ .Site.Params.author }}
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
+    {{ end }}. <br>
+    {{ i18n "attribution" . | safeHTML }}
+  </p>
+  
+  <script src="//yihui.name/js/math-code.js"></script>
+  <script async
+  src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

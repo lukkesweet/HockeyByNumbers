@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics on Hockey By Numbers</title>
+    <link>/categories/statistics/</link>
+    <description>Recent content in Statistics on Hockey By Numbers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 11 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Introduction to Hockey Statistics</title>
+      <link>/blog/an-introduction-to-hockey-statistics/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/an-introduction-to-hockey-statistics/</guid>
+      <description>Vancouver Canucks’ 2020 All-Stars: Quinn Hughes, left, Elias Pettersson, center, and Jacob Markstrom, right. (NHL.com)
+Team StatisticsTable 1: Vancouver Canucks Season Statistics - February 11, 2020TeamGPWLOTPP%RWROWS/O WinGFGAGF/GPGA/GPPP%PK%Net PP%Net PK%Shots/GPSA/GPFOW%Vancouver Canucks5731215670.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Player Statistics on Hockey By Numbers</title>
+    <link>/tags/player-statistics/</link>
+    <description>Recent content in Player Statistics on Hockey By Numbers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/player-statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Introduction to Player Statistics</title>
+      <link>/post/an-introduction-to-player-statistics/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/an-introduction-to-player-statistics/</guid>
+      <description>https://www.nhl.com/canucks/news/vancouver-canucks-nhl-all-star-skills/c-314281870
+This is a test post. I have no clue what I am doing.</description>
+    </item>
+    
+  </channel>
+</rss>

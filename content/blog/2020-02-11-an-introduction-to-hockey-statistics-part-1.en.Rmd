@@ -1,0 +1,343 @@
+---
+title: An Introduction to Hockey Statistics
+author: Lukke Sweet
+date: '2020-02-11'
+slug: an-introduction-to-hockey-statistics
+categories:
+  - NHL
+  - Statistics
+tags:
+  - NHL
+  - Statistics
+description: ''
+images:
+  - '/post/2020-02-11-an-introduction-to-hockey-statistics.en_files/Canucks 2020 All-Stars.jpg'
+linktitle: ''
+type: post
+---
+
+![Vancouver Canucks' 2020 All-Stars: Quinn Hughes, left, Elias Pettersson, center, and Jacob Markstrom, right.   (NHL.com)](/post/2020-02-11-an-introduction-to-hockey-statistics.en_files/Canucks 2020 All-Stars.jpg)
+
+
+# Team Statistics
+
+```{r, echo = F, message = F, warnings = F}
+
+library(magrittr)
+library(dplyr)
+library(kableExtra)
+library(knitr)
+
+team.dat <- readxl::read_xlsx(here::here('content', 'post', 'Team Summary 2.11.2020.xlsx'))
+
+team.dat %>%
+  filter(Team == 'Vancouver Canucks') %>%
+  select(-Season, -T) %>%
+  kable('html', booktabs = T, caption = 'Vancouver Canucks Season Statistics - February 11, 2020') %>%
+  kable_styling(position = 'center', full_width = F) %>%
+  scroll_box(width = "100%")
+```
+We'll use the Vancouver Canucks as our example to look over team statistics.  The Vancouver Canucks are currently in their 50th season after being an expansion team in 1970.  Since then they have appeared in the playoffs 27 times, most recently in 2015.  They have also appeared in 3 Stanley Cup finals, most recently in 2011, where they lost to the Boston Bruins in Game 7.
+
+
+### GP: Games Played (57)
+
+Number of games played for the season.
+
+### W: Wins (31)
+
+Number of games won for the season.
+
+### L: Regulation Losses (21)
+
+Number of regulation losses for the season.
+
+### OT: Overtime or Shootout Losses (5)
+
+Number of overtime or shootout losses.
+
+### P: Points (67)
+
+Number of points a team has accrued.  A team gains 2 points for each win and 1 point for each overtime or shootout loss.  The Canucks have 31 wins and 5 overtime losses so:
+
+$$P = 2*W + OT = 2(31) + 5 = 67$$
+
+### P%: Point Percentage (0.588)
+
+Percent of possible points gained.  Calculated by dividing number of points gained by the total number of points possible, or two times the number of games.  Vancouver has 67 points out of 114 possible as shown below:
+
+$$P\% = \frac{P}{Total Points Possible} = \frac{67}{2*57} = \frac{67}{114} = 0.588$$
+### RW: Regulation Wins 
+
+Number of wins within regulation time.
+
+### ROW: Regulation plus Overtime Wins (28)
+
+Number of wins within regulation time or overtime.
+
+### S/O Win: Shootout Wins (3)
+
+Number of shootout wins.
+
+### GF: Goals For (184)
+
+Total number of goals the team has scored.
+
+### GA: Goals Against (173)
+
+Total goals scored on the team.
+
+### GF/GP: Goals For per Game Played (3.23)
+
+Average goals per game.  Calculated by dividing Goals For by Games Played:
+
+$$GF/GP = \frac{184}{57} = 3.23$$
+
+### GA/GP: Goals Against per Game Played (3.04)
+
+Average goals scored on the team per game.  Calculated by dividing Goals Against by Games Played:
+
+$$GA/GP = \frac{173}{57} = 3.04$$
+
+### PP%: Power Play Percentage (23.4)
+
+Percentage of successful power plays.
+
+### PK%: Penalty Kill Percentage (80.5)
+
+Percentage of successful defenses against an opponent's power play.
+
+### Net PP%: Net Power Play Percentage (21.5)
+
+Net Power Play Percentage is an updated version of Power Play Percentage that takes into account.  It is calculated by the following equation:
+
+$$Net PP\% = \frac{PPGF - SHGA}{PP}$$
+where, PPGF is Power Play Goals For, SHGA is Shorthanded Goals Against, and PP is Power Play Opportunities.
+
+### Net PK%: Net Penalty Kill Percentage (83.2)
+
+Similarly, Penalty Kill Percentage got an updated version called Net Penalty Kill Percentage which is calculated:
+
+
+$$Net PK\% = 1 - \frac{PPGA - SHGF}{TS}$$
+
+where PPGA is Power Play Goals Against, SHGF is Shorthanded Goals For, and TS is Times Shorthanded.
+
+### Shots/GP: Shots per Games Played (31)
+
+Average number of shots per game.  
+
+### SA/GP: Shots Against per Game Played (33)
+
+Average number of shots against per game
+
+### FOW%: Faceoff Win Percentage (53.8)
+
+Percentage of faceoffs won by the team.
+
+# Skater Statistics
+
+```{r, echo = F, message = F, warnings = F}
+
+skater.dat <- readxl::read_xlsx(here::here('content', 'post', 'Vancouver Skater Statistics 2.11.2020.xlsx'))
+
+skater.dat %>%
+  filter(Player == 'Elias Pettersson') %>%
+  select(-Season) %>%
+  kable('html', booktabs = T, caption = 'Elias Pettersson Season Statistics - February 11, 2020') %>%
+  kable_styling(position = 'center', full_width = F) %>%
+  scroll_box(width = "100%")
+
+```
+
+Let's take a look at Elias Pettersson as our example for individual skater statistics.  Pettersson is in his second season with the Vancouver Canucks after being drafted in 2018.  He made a splash in his first season going on to win the Calder Memorial Trophy, annually given "to the player selected as the most proficient in his first year of competition in the National Hockey League."
+
+### Team: Team Played For (Vancouver Canucks)
+
+This is pretty self-explanatory.  It covers which team the player is with for the given season.
+
+### S/C: Skater Shoots (Left)  
+
+The handedness of the player.  It is S/C because the same statistic is used for a goalie's catching hand. 
+
+### Pos: Player Position (Center)  
+
+The players position.  Skaters can be a Center (C), Defender (D), Left Wing (L), or Right Wing (R). 
+
+### GP: Games Played (56)  
+
+The number of games the player has appeared in for the given season.
+
+### G: Goals (23)  
+
+The number of goals the player has scored for a given season.
+
+### A: Assists (34)  
+
+The number of assists the player has for a given season.  Assists are awarded to the two players to control the puck prior to the goal scorer. 
+
+### P: Points (57)  
+
+The number of points for the player in a given season.  Points are calculated by adding Goals and Assists.  The Art Ross Trophy is awarded to the player who has the most points at the end of the regular season.  Pettersson has 23 goals and 34 assists:
+
+$$P = 23 + 34 = 57$$
+
+### +/-: Plus-Minus (12) 
+
+Plus-Minus is a controversial statistic in hockey due to its calculation.  Taking into account only even-strength and shorthanded goals^[Powerplay goals, penalty shot goals, and empty net goals are omitted.], Plus-Minus is given a 'plus' for each goal scored while the player is on the ice.  A 'minus' is given for each goal a team gives up while the player is on the ice.  Plus-Minus is the difference between these two numbers.  
+
+### PIM: Penalty Minutes (16)  
+
+The number of penalty minutes the player has accrued for the given season. 
+
+### P/GP: Points per Game Played (1.02)  
+
+The average number of points per game.  Calculated by dividing the players points by the number of games played.
+
+Let's take a look at how this was calculated for Pettersson, he's played in 56 games and accrued 57 points:
+
+$$P/GP = \frac{57}{56} = 1.02$$
+
+### EVG: Even Strength Goals (16)  
+
+Number of goals scored by the player while their team is at even strength.  Even strength means that both teams have the same number of players on the ice.  
+
+### EVP: Even Strength Points (36) 
+
+Number of points accrued by the player while their team is at even strength.  This is again calculated as the sum of goals and assists.  
+
+### PPG: Power Play Goals (7)  
+
+Number of goals scored by the player while their team is on a power play.  A power play is when a team has more players on the ice following a penalty by the opposing team.
+
+### PPP: Power Play Points (21)  
+
+Number of points accrued by the player while their team is on a power play.
+
+### SHG: Shorthanded Goals (0)  
+
+Number of goals scored by the player while their team is shorthanded.  A team will play shorthanded following a penalty meaning that the opposing team is on a power play.
+
+### SHP: Shorthanded Points (0)  
+
+Number of points accrued by the player while their team is shorthanded.
+
+### GWG: Game Winning Goals (5) 
+
+Number of game winning goals the player has scored.  A game winning goal is defined by the goal a team needs to win, without scoring any additional goals.  For example, if a team wins 7-4, the 5th goal is considered the game winning goal.
+
+### S: Shots (137)  
+
+Number of shots on goal the player has taken.
+
+### S%: Shooting Percentage (16.8)
+
+The shooting percentage of the player.  Calculated by dividing goals by shots.  Pettersson has 23 goals on 137 shots, so:
+
+$$S\% = \frac{23}{137}*100 = 16.8\%$$
+
+### TOI/GP: Time on Ice per Game Played (18:29) 
+
+Average time on Ice for the player. 
+
+### FOW%: Faceoff Win Percentage (44.2)  
+
+Percentage of faceoff wins for the player.
+
+
+# Goalie Statistics
+
+```{r, echo = F, message = F, warnings = F}
+
+goalie.dat <- readxl::read_xlsx(here::here('content', 'post', 'Goalie Statistics 2.11.2020.xlsx'))
+
+
+goalie.dat %>%
+  filter(Player == 'Jacob Markstrom') %>%
+  select(-Season, -T) %>%
+  kable('html', booktabs = T, caption = 'Jacob Markstrom Season Statistics - February 11, 2020') %>%
+  kable_styling(position = 'center', full_width = F) %>%
+  scroll_box(width = "100%")
+
+```
+
+Jacob Markstrom was drafted in the second round of the 2008 NHL Draft by the Florida Panthers.  Making his NHL debut in 2011 for the Panthers before spending three seasons with the American Hockey League before being traded to the Vancouver Canucks for Roberto Luongo in 2014.
+
+### Team: Team played for (Vancouver Canucks)
+
+This is pretty self-explanatory.  It covers which team the goalie is with for the given season.
+
+### S/C: Goalie Catches (L)
+
+The handedness of the player.  It is S/C because the same statistic is used for a skater's shooting hand. 
+
+### GP: Games Played (40)
+
+Number of games played.
+
+### GS: Games Started (40)
+
+Number of games started.
+
+### W: Wins (21)
+
+Number of wins.
+
+### L: Regulation Losses (16)
+
+Number of losses in regulation time.
+
+### OT: Overtime or Shootout Losses (3)
+
+Number of overtime or shootout losses.
+
+### SA: Shots Against (1,306)
+
+Number of shots against.
+
+### Svs: Saves (1,195)
+
+Number of saves.
+
+### GA: Goals Against (111)
+
+Number of goals scored against.
+
+### Sv%: Save Percentage (0.915)
+
+Percentage of saved shots, calculated by dividing saves by total shots.  Markstrom has made 1,195 saves out of 1,306 shots which is calculated below:
+
+$$Sv\% = \frac{1,195}{1,306} = 0.915$$
+
+### GAA: Goals Against Average (2.81)
+
+Average number of goals scored against per game, as measured in 60-minute increments.  Markstrom has let in 111 goals while on the ice for 2,369 minutes and 20 seconds. GAA is caluculated by the following formula:
+
+$$GAA = \frac{GA*60}{TOI} = \frac{111*60}{2369.33} = 2.81$$
+where GA is goals against and TOI is time on Ice.
+
+### TOI: Time on Ice (2,369:20)
+
+Amount of time the goalie has been out on the ice.
+
+### SO: Shutouts (1)
+
+Number of shutout wins.
+
+### G: Goals (0)
+
+Number of goals scored.
+
+### A: Assists (1)
+
+The number of assists the player has for a given season.  Assists are awarded to the two players to control the puck prior to the goal scorer. 
+
+### P: Points (1)
+
+The number of points for the player in a given season.  Points are calculated by adding Goals and Assists.  The Art Ross Trophy is awarded to the player who has the most points at the end of the regular season.  Markstrom has 0 goals and 1 assist.
+
+$$P = 0 + 1 = 1$$
+
+### PIM: Penalty Minutes (4)
+
+Number of Penalty Minutes Accrued by the Goalie^[Goalies cannot be sent to the penalty box, instead the penalty is served by another player from their team that was on the ice at the time of the penalty.]
