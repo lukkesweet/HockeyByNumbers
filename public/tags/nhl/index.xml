@@ -5,10 +5,20 @@
     <link>/tags/nhl/</link>
     <description>Recent content in NHL on Hockey By Numbers</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/nhl/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NHL Predictions - February 14, 2020</title>
+      <link>/post/nhl-predictions-february-14-2020/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/nhl-predictions-february-14-2020/</guid>
+      <description>These predictions are created using an ELO Model. More information on my methodology is coming in a future post.
+Table 1: NHL Predictions - February 14, 2020DateHomeVisitorProbability Home Team WinsProbability Away Team Wins8912020-02-14Carolina HurricanesNew Jersey Devils62.7%37.3%8922020-02-14Columbus Blue JacketsNew York Rangers58.</description>
+    </item>
     
     <item>
       <title>An Introduction to Hockey Statistics</title>

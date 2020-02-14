@@ -1,0 +1,35 @@
+---
+title: NHL Predictions - February 14, 2020
+author: Lukke Sweet
+date: '2020-02-14'
+slug: nhl-predictions-february-14-2020
+categories:
+  - NHL
+  - Predictions
+tags:
+  - NHL
+  - Predictions
+description: ''
+images:
+  - ''
+linktitle: ''
+---
+
+These predictions are created using an ELO Model.  More information on my methodology is coming in a future post.
+
+```{r, echo = F, message = F, warning = F}
+
+library(magrittr)
+library(dplyr)
+library(kableExtra)
+library(knitr)
+
+source(here::here('Predictions', 'R', 'NHL Analysis.R'))
+
+gdata::keep(TodaysPredictions, sure = T)
+
+TodaysPredictions %>%
+  kable('html', booktabs = T, caption = 'NHL Predictions - February 14, 2020') %>%
+  kable_styling(position = 'center', full_width = F)
+  
+```
