@@ -29,7 +29,8 @@ source(here::here('Predictions', 'R', 'NHL Analysis.R'))
 gdata::keep(TodaysPredictions, sure = T)
 
 TodaysPredictions %>%
-  kable('html', booktabs = T, caption = 'NHL Predictions - February 14, 2020') %>%
+  kable('html', booktabs = T, caption = 'NHL Predictions - February 14, 2020', row.names = F) %>%
   kable_styling(position = 'center', full_width = F)
+ c()
   
 ```
