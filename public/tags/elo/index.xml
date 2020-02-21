@@ -5,10 +5,20 @@
     <link>/tags/elo/</link>
     <description>Recent content in ELO on Hockey By Numbers</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/elo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NHL Predictions - February 21, 2020</title>
+      <link>/post/nhl-predictions-february-21-2020/</link>
+      <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/nhl-predictions-february-21-2020/</guid>
+      <description>These predictions are created using an ELO Model. More information on my methodology is coming in a future post.
+Table 1: NHL Predictions - February 21, 2020GameProbability Away Team WinsProbability Home Team WinsColorado Avalanche @ Anaheim Ducks61.68%38.32%New York Rangers @ Carolina Hurricanes43.03%56.</description>
+    </item>
     
     <item>
       <title>NHL Predictions - February 20, 2020</title>
