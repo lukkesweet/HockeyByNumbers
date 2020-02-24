@@ -5,10 +5,20 @@
     <link>/categories/predictions/</link>
     <description>Recent content in Predictions on Hockey By Numbers</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/predictions/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NHL Predictions - February 24, 2020</title>
+      <link>/post/nhl-predictions-february-24-2020/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/nhl-predictions-february-24-2020/</guid>
+      <description>These predictions are created using an ELO Model. More information on my methodology is coming in a future post.
+Table 1: NHL Predictions - February 24, 2020GameProbability Away Team WinsProbability Home Team WinsOttawa Senators @ Columbus Blue Jackets35%65%</description>
+    </item>
     
     <item>
       <title>NHL Predictions - February 23, 2020</title>
